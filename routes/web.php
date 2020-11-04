@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/', function () {
+    return view('welcome');
+});
+
 // ユーザー
 Route::namespace('user')->prefix('user')->name('user.')->group(function () {
 
