@@ -17,7 +17,12 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @var string
      */
-    public const HOME = '/home';
+
+    // Userのリダイレクト先
+    public const HOME = '/user/home';
+
+    // Adminのリダイレクト先
+    public const ADMIN_HOME = '/admin/home';
 
     /**
      * The controller namespace for the application.
@@ -26,7 +31,7 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @var string|null
      */
-    // protected $namespace = 'App\\Http\\Controllers';
+     protected $namespace = 'App\Http\Controllers';
 
     /**
      * Define your route model bindings, pattern filters, etc.
